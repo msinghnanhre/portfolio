@@ -1,0 +1,77 @@
+@use "../../partials/_variables.scss" as *;
+@use "../../partials/_mixins.scss" as *;
+
+.main{
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    @include tablet{
+    }
+    &__img-container{
+        background-color: #e6e1e1;
+    }
+    &__img{
+        width: 500px;
+        position: relative;
+        bottom: -1rem;
+    }
+
+    &__name{
+        font-weight: bold;
+        font-size: 7rem;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: -2px -2px rgba(40, 212, 54, 0.2),-4px -4px rgba(235, 140, 140, 0.5), -6px -6px rgba(155, 218, 136, 0.5);
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        writing-mode: vertical;
+    }
+}
+
+@keyframes flipUp{
+    from{transform: rotateX(90deg);}
+    to{transform: rotateX(0deg);}
+}
+
+p{  
+    display: inline-block;
+    animation: flipUp 1s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    transform-origin: 50% 70%;
+}
+
+p:nth-child(1){
+    animation-delay: .2s;
+}
+p:nth-child(2){
+    animation-delay: .4s;
+}
+
+p:nth-child(3){
+    animation-delay: .6s;
+}
+p:nth-child(4){
+    animation-delay: .8s;
+}
+p:nth-child(5){
+    animation-delay: 1s;
+}
+p:nth-child(6){
+    animation-delay: 1.2s;
+}
+p:nth-child(7){
+    animation-delay: 1.4s;
+}
+p:nth-child(8){
+    animation-delay: 1.6s;
+}
+p:nth-child(9){
+    animation-delay: 1.8s;
+}
+
+
+
+
+
