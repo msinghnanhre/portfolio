@@ -17,9 +17,6 @@ function Main() {
 
       </div>
       <img className="main__heroimg" src={hero} />
-      {/* <button className="main__button">
-        <img className="main__arrow" src={arrowDown} alt="arrow down" />
-      </button> */}
       <h1 className="main__title">ABOUT</h1>
       
       <p className="main__body">As a Full-Stack Web Developer, I code visually appealing front-end components that meet the requirements of mock-ups and fulfill user stories. I also work on the back-end, build APIs, work with databases, monitor and process pull requests for production deployments. Hence completing full lifeCycle for application. I mainly work with <strong> React, Javascript, Express, Node, and MongoDB (MERN Stack) </strong> but also always looking to learn new frameworks and languages. Currently, I am learning Python and Django.
