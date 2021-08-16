@@ -4,28 +4,36 @@
 
 .navbar{
     height: 5rem;
+    color: $primary-text;
+
+    @include flex-column{
+        align-items: center;
+        margin: 1rem 0;
+    }
     @include tablet{
-        margin: 0 2rem;
+        margin: 0 5rem;
         @include flex-row{
             justify-content:space-between;
             align-items:center;
         };
     }
-    &__list{
+    &__resume{
+        margin-top: .5rem;
+        @include button{
+            background-color: $primary-text;
+        }
         @include tablet{
-            width: 300px;
+            margin-top: 0rem;
+        }
+    }
+    &__list{
+        text-decoration: none;
+        @include tablet{
             @include flex-row{
                 justify-content:space-between;
                 align-items:center;
             };  
         }
-        &item{
-            list-style-type: none;
-            padding: .5rem 1rem;
-            border-radius: 10px;
-            &:active, &:hover{
-                background-color: lightgray;
-            }
-        }
+
     }
 }

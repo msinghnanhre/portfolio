@@ -1,0 +1,17 @@
+@use "../../partials/_variables.scss" as *;
+@use "../../partials/_mixins.scss" as *;
+
+.footer{
+    color: gray;
+    min-height: 100px;
+    @include flex-row{
+        align-items: flex-end;
+    }
+    &__body{
+        padding: 2rem;
+        text-align: center;
+        width: 100%;
+        font-size: .65rem;
+        opacity: 0.65;
+    }
+}

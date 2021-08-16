@@ -1,0 +1,137 @@
+@use "../../partials/_variables.scss" as *;
+@use "../../partials/_mixins.scss" as *;
+
+.work{
+    width: 100%;
+    text-align: center;
+    color: $primary-text;
+    margin: 5rem auto;
+    @include tablet{
+        width: 70%;
+    }
+    &__title{
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    &__projectWrapper{
+        margin: 7rem auto;
+        @include flex-row{
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 4rem;
+        }
+        @include tablet{
+            @include flex-row{
+                margin-top: 5rem;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 2rem;
+            }
+        }
+    }
+
+    &__projects{
+        position: relative;
+        width: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 1rem;
+        //padding: 30px;
+    }
+    &__card{
+        position: relative;
+        height: 450px;
+        background: #fff;
+        margin: 30px 10px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+        transition: 0.7s ease-in-out;
+        border-radius: 4px;
+    }
+
+    &__imgBx{
+        position: relative;
+        width: 190px;
+        height: 250px;
+        top: -60px;
+        margin: 0 1rem;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.35);
+        z-index: 1; 
+        border-radius: 4px;
+        overflow: scroll;
+    }
+    &__img{
+        max-width: 100%;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    &__body{
+        opacity: 0.7;
+        font-size: .75rem;
+    }
+    &__stack{
+        opacity: .9;
+        color: darkgray;
+        padding-bottom: 1rem;
+        font-size: .65rem;
+        &-title{
+            font-weight: 600;
+            padding-top: 1rem;
+        }
+    }
+    &__github{
+        width: 30px;
+        margin-top: .15rem;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__button{
+        @include button{
+            transition: .5s ease-in-out;
+        };
+        &:hover{
+            cursor: pointer;
+            background-color: darkgray;
+        }
+    }
+    &__media{
+        @include flex-row{
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+    &__links{
+        margin: .5rem 0;
+    }
+
+    &__content{
+            position: relative;
+            margin-top: -40px;
+            padding: 10px 15px;
+            width: 200px;
+            color: #111;
+            display: block;
+            opacity: 1;
+            transition: 0.7s ease-in-out;
+            text-align: left;
+            @include tablet{
+               width: 300px; 
+            }
+    }
+}
+
+
+
+
+// .work__card:hover .work__content{
+//     display: block;
+//     opacity: 1;
+//     width: 300px;
+//     margin-top: -40px;
+// }

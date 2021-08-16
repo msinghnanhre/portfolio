@@ -1,22 +1,24 @@
-import React from 'react';
-import AuthDemo from "../../AuthDemo"
+import React, { useState, useEffect } from 'react';
 import './App.scss';
 import Navbar from "../Navbar/Navbar"
 import Main from "../Main/Main"
+import Contact from "../Contact/Contact"
+import Work from "../work/work"
+import Footer from "../Footer/Footer"
 
 
-import Projects from "../Projects/Projects"
+
 
 function App() {
-
-
-
   return (
-    <div>
+
+    <div className="app">
       <Navbar />
       <Main />
-      <Projects />
-      {/* <Contact /> */}
+      <Work  />
+      <Contact />
+      <Footer />
+      
     </div>
   );
 }

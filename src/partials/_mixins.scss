@@ -23,4 +23,11 @@
     @media (min-width:$desktop-size) {
         @content;
     }
+};
+
+@mixin button{
+    border: none;
+    padding: .5rem 1rem;
+    border-radius:4px;
+    @content;
 }
