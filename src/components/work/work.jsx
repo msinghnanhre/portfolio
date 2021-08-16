@@ -14,7 +14,7 @@ import brainflix from "../../assets/images/brainflix.svg"
 function Work() {
 
     const { ref, inView } = useInView({
-        threshold: 0.3
+        threshold: 0
     })
 
     const animation = useAnimation()
@@ -59,7 +59,7 @@ function Work() {
             <h2 className="work__title">PROJECTS</h2>
             <div 
                 className="work__projectWrapper">
-                <motion.div
+                <div
                     
                     animate={animation}
                     className="work__projects"
@@ -84,9 +84,9 @@ function Work() {
                             </div>
                         </div>
                     </div>
-                </motion.div>
+                </div>
 
-                <motion.div
+                <div
                     
                     animate={leftAnimation}
                     className="work__projects"
@@ -110,9 +110,9 @@ function Work() {
                             </div>
                         </div>
                     </div>
-                </motion.div>
+                </div>
 
-                <motion.div
+                <div
                     
                     animate={animation}
                     className="work__projects">
@@ -135,9 +135,9 @@ function Work() {
                             </div>
                         </div>
                     </div>
-                </motion.div>
+                </div>
 
-                <motion.div
+                <div
                     
                     animate={leftAnimation}
                     className="work__projects">
@@ -160,9 +160,9 @@ function Work() {
 
                         </div>
                     </div>
-                </motion.div>
+                </div>
 
-                <motion.div
+                <div
                     
                     animate={animation}
                     className="work__projects">
@@ -185,7 +185,7 @@ function Work() {
 
                         </div>
                     </div>
-                </motion.div>
+                </div>
             </div>
         </div>
     )
