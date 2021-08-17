@@ -64,7 +64,7 @@ function Work() {
                             <h5 className="work__links">Additional Links</h5>
                             <div className="work__media">
                                 <a className="work__github" href="https://github.com/msinghnanhre/inStock"><img className="work__github" src={github} /></a>
-                                <a className="projects__video projects__video-left" href="https://www.loom.com/share/3d8c1aba9435425eaaac72c853488958?sharedAppSource=personal_library">
+                                <a className="projects__video projects__video-left" href="https://dreamy-austin-f0a2d1.netlify.app/">
                                     <button className="work__button">Watch Demo</button>
                                 </a>
                             </div>
