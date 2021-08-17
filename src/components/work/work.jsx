@@ -18,7 +18,7 @@ function Work() {
             exit={{ x: `100vw`, transition: { ease: 'easeInOut' } }}
             className="work"
         >
-            <h2 className="work__title">PROJECTS</h2>
+            <h2 className="work__title">THINGS I BUILT</h2>
             <div 
                 className="work__projectWrapper">
                 <div
