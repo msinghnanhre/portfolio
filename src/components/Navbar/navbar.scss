@@ -4,28 +4,36 @@
 
 .navbar{
     height: 5rem;
+    padding-top: 2rem;
     color: $primary-text;
 
     @include flex-column{
         align-items: center;
         margin: 1rem 0;
     }
-    @include tablet{
-        margin: 0 5rem;
-        @include flex-row{
-            justify-content:space-between;
-            align-items:center;
-        };
-    }
-    &__resume{
-        margin-top: .5rem;
-        @include button{
-            background-color: $primary-text;
-        }
+    &__nav{
+        margin-top: 1rem;
+            @include flex-row{
+                justify-content:space-evenly;
+                width: 70%;
+                align-items:center;
+            }
         @include tablet{
-            margin-top: 0rem;
+            width: 40%;
         }
     }
+    &__link{
+        list-style-type: none;
+        text-decoration: none;
+        font-family: $header-text;
+        font-size: 1.25rem;
+        color: gray;
+        transition: .25s ease-in-out all; 
+        &:hover{
+            color: $primary-text;
+        }
+    }
+    
     &__list{
         text-decoration: none;
         @include tablet{
@@ -34,6 +42,9 @@
                 align-items:center;
             };  
         }
-
+    }
+    &__logo{
+        width: 50px;
+        margin-bottom: 1rem;
     }
 }

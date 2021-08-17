@@ -3,28 +3,31 @@
 
 .main{
     overflow: hidden;
+    margin: 3rem auto;
     position: relative;
     text-align: center;
     @include tablet{
+        margin: 8rem auto;
     }
 
     &__hi{
         color: $primary-text;
-        font-size: 1.5rem;
+        font-size: 2rem;
+        font-family: $header-text;
         font-weight: 300;
         @include tablet{
            font-size: 3rem; 
         }
     }
     &__intro{
-
+        
         color: $primary-text;
         font-size: 1.15rem;
         opacity: .70;
         width: 50%;
-        margin: 0 auto;
+        margin: .5rem auto;
         @include tablet{
-            font-size: 1.75rem;
+            font-size: 2rem;
         }
     }
 
@@ -35,8 +38,7 @@
     }
     &__img{
 
-        width: 25px;
-        background-size: cover;
+        width: 30px;
         animation: hand 1s ease-in-out infinite alternate;
         transform-origin: bottom right;
         @include tablet{
@@ -73,11 +75,15 @@
     &__body{
         padding: 2rem 0;
         margin: 0 auto;
-        max-width: 60%;
+        width: 80%;
+        text-align: left;
         color: darkgray;
         font-size: .85rem;
         line-height: 1.25rem;
         letter-spacing:.1rem;
+        @include tablet{
+            max-width: 60%;
+        }
     }
     &__arrow{
         position: relative;

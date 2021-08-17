@@ -5,7 +5,7 @@ import Main from "../Main/Main"
 import Contact from "../Contact/Contact"
 import Work from "../work/work"
 import Footer from "../Footer/Footer"
-
+import {BrowserRouter, Switch, Route } from "react-router-dom"
 
 
 
@@ -13,12 +13,17 @@ function App() {
   return (
 
     <div className="app">
-      <Navbar />
-      <Main />
-      <Work  />
-      <Contact />
-      <Footer />
       
+      <BrowserRouter>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Main} />
+          <Route path="/projects" component={Work} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+        <Footer />
+      </BrowserRouter>
+
     </div>
   );
 }

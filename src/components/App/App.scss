@@ -1,15 +1,14 @@
 @use "../../partials/variables.scss" as *;
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');;
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Open sans', sans-serif;
+    font-family: $mont-text;
 }
 
 body{
-background-color: #000;
+  background-color: #000;
 
 }
 

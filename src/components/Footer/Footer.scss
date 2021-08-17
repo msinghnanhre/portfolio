@@ -4,8 +4,9 @@
 .footer{
     color: gray;
     min-height: 100px;
-    @include flex-row{
-        align-items: flex-end;
+    @include flex-column{
+        align-items: center;
+        justify-content: space-between;
     }
     &__body{
         padding: 2rem;
@@ -13,5 +14,52 @@
         width: 100%;
         font-size: .65rem;
         opacity: 0.65;
+    }
+
+    &__nav{
+        margin: 3rem auto;
+            @include flex-row{
+                justify-content:space-evenly;
+                width: 70%;
+                align-items:center;
+            }
+        @include tablet{
+            width: 40%;
+        }
+    }
+    &__link{
+        list-style: none;
+        text-decoration: none;
+        color: $primary-text;
+        font-size: .75rem;
+        @include tablet{
+            font-size: 1.5rem;
+        }
+    }
+    &__text{
+        margin: 2rem;
+        font-size: .75rem;
+        @include tablet{
+            font-size: 2rem;
+        }
+    }
+    &__socials{
+        @include flex-row{
+            justify-content: center;
+            align-items: flex-end;
+            gap: 1.5rem;
+        }
+        &-link{
+            width: 20px;
+        }
+    }
+        &__resume{
+            font-size: .65rem;
+            @include button{
+                background-color: $primary-text;
+            }
+        @include tablet{
+
+        }
     }
 }
