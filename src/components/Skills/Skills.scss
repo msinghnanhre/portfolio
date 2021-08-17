@@ -1,0 +1,22 @@
+@use "../../partials/_variables.scss" as *;
+@use "../../partials/_mixins.scss" as *;
+
+.skills{
+    margin: 3rem 0;
+    &__title{
+        color: $primary-text;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    &__wrapper{
+        color: gray;
+    }
+    &__subtitle{
+        color: $primary-text;
+        margin: .75rem;
+        opacity: 0.7;
+    }
+    &__item{
+        padding: .12rem;
+    }
+}
