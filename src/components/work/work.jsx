@@ -1,7 +1,5 @@
-import { AnimatePresence, motion, useAnimation} from "framer-motion"
+import { motion} from "framer-motion"
 import './work.scss'
-import { useInView } from "react-intersection-observer"
-import {useEffect} from "react"
 import investors from "../../assets/images/investors.svg"
 import instock from "../../assets/images/warehouse.svg"
 import chatapp from "../../assets/images/chatapp.svg"
@@ -10,58 +8,20 @@ import github from "../../assets/images/github.svg"
 import brainflix from "../../assets/images/brainflix.svg"
 
 
-
 function Work() {
 
-    const { ref, inView } = useInView({
-        threshold: 0
-    })
-
-    const animation = useAnimation()
-    const leftAnimation = useAnimation()
-    useEffect(() => {
-        if (inView) {
-            animation.start({
-                opacity: 1,
-
-                transition: {
-                    duration: 4,
-                    type: 'spring',
-                    bounce: 0.5
-                }
-            })
-
-            leftAnimation.start({
-                opacity: 1,
-                
-                transition: {
-                    duration: 4,
-                    type: 'spring',
-                    bounce: 0.5
-                }
-            })
-        }
-        else if (!inView) {
-            animation.start({
-                opacity: 0,
-                
-            })
-            leftAnimation.start({
-                opacity: 0,
-                
-            })
-        }
-
-    }, [inView])
-
     return (
-        <div ref={ref} className="work" >
+        <motion.div 
+            initial={{ x: `-100vw`, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            exit={{ x: `100vw`, transition: { ease: 'easeInOut' } }}
+            className="work"
+        >
             <h2 className="work__title">PROJECTS</h2>
             <div 
                 className="work__projectWrapper">
                 <div
-                    
-                    animate={animation}
                     className="work__projects"
                 >
                     <div  className="work__card">
@@ -88,7 +48,7 @@ function Work() {
 
                 <div
                     
-                    animate={leftAnimation}
+                    
                     className="work__projects"
                 >
                     <div className="work__card">
@@ -113,8 +73,6 @@ function Work() {
                 </div>
 
                 <div
-                    
-                    animate={animation}
                     className="work__projects">
                     <div className="work__card">
                         <div className="work__imgBx">
@@ -139,7 +97,7 @@ function Work() {
 
                 <div
                     
-                    animate={leftAnimation}
+                    
                     className="work__projects">
                     <div className="work__card">
                         <div className="work__imgBx">
@@ -163,8 +121,6 @@ function Work() {
                 </div>
 
                 <div
-                    
-                    animate={animation}
                     className="work__projects">
                     <div className="work__card">
                         <div className="work__imgBx">
@@ -187,7 +143,7 @@ function Work() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

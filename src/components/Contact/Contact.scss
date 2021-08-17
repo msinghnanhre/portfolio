@@ -2,7 +2,10 @@
 @use "../../partials/_mixins.scss" as *;
 
 .contact {
-    width: 50%;
+    width: 80%;
+    @include tablet{
+        width: 50%;
+    }
     margin: 8rem auto;
     &__title{
         color: $primary-text;

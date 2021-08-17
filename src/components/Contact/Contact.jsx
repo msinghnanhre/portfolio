@@ -1,9 +1,7 @@
 import React from 'react'
 import "./Contact.scss"
 import emailjs from 'emailjs-com';
-import github from "../../assets/images/github.svg"
-import linkedin from "../../assets/images/linkedin.svg"
-import pdf from "../../assets/images/pdf.svg"
+import { motion } from "framer-motion"
 
 function Contact() {
 
@@ -21,7 +19,13 @@ function Contact() {
 
 
     return (
-        <div className="contact">
+        <motion.div
+            initial={{ x: `-100vw`, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            exit={{ x: `100vw`, transition: { ease: 'easeInOut' } }}
+            className="contact"
+        >
             <h3 className="contact__title">LET'S CONNECT</h3>
             <p className="contact__body">
                 Perhaps you have some questions? or you are looking for someone to work on your project? Either way I would love to hear from you.<br /><br />
@@ -52,7 +56,7 @@ function Contact() {
 
                 </form>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

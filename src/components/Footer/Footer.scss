@@ -4,6 +4,7 @@
 .footer{
     color: gray;
     min-height: 100px;
+    margin-bottom: 7rem;
     @include flex-column{
         align-items: center;
         justify-content: space-between;
