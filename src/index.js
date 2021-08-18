@@ -5,12 +5,13 @@ import { HashRouter, BrowserRouter } from "react-router-dom"
 
 
 ReactDOM.render(
-    
+    <BrowserRouter>
     <HashRouter>
-        <BrowserRouter>
+        
             <App />
-        </BrowserRouter>
-    </HashRouter>,
+        
+    </HashRouter>
+    </BrowserRouter>,
     document.getElementById('root'));
 
 
