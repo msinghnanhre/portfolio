@@ -26,9 +26,7 @@ function Main() {
       <img className="main__heroimg" src={hero} />
       <h1 className="main__title">ABOUT</h1>
       
-      <p className="main__body"> When I was unaware of programming world, I would often wonder about the technologies and
-      structure of software around me. How does data travel? How does software remembers users? This curiosity was what led me to learn
-      programming. This curiosity and hugner to learn more is what keeps me going.
+      <p className="main__body"> As a Full-Stack Web Developer, I code visually appealing front-end components that meet the requirements of mock-ups and fulfill user stories. I also work on the back-end, build APIs, work with databases, monitor and process pull requests for production deployments. Hence completing full lifeCycle for application. I mainly work with React, Javascript, Express, Node, and MongoDB (MERN Stack) but also always looking to learn new frameworks and languages. Currently, I am learning Python and Django.
 
       </p>
       <Skills />
